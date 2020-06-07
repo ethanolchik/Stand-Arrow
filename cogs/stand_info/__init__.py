@@ -9,5 +9,4 @@ class Stands(commands.Cog):
         """Lists all of the relevant information for a paritcular stand.
            One stand attribute per line"""
         stand_information = await ctx.get_stand(stand_name)
-        stand_information = tuple(stand_information)
         await ctx.send("\n".join(str(stand_attribute) for stand_attribute in stand_information))

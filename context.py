@@ -7,4 +7,5 @@ class Context(commands.Context):
     async def get_stand(self, stand_name):
         """Lists all of the relevant information for a particular stand.
            One stand attribute per line of output."""
-        return await self.bot.pool.fetchrow(f"SELECT * from stand WHERE stand_name = '{stand_name}'")
+        stand = await self.bot.pool.fetchrow(f"SELECT * from stand WHERE stand_name = '{stand_name}'")
+        return tuple(stand)
