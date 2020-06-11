@@ -4,7 +4,6 @@ import config
 import context
 from discord.ext import commands
 
-#TODO separate the inner class into another module.
 class Bot(commands.Bot):
 
     def __init__(self, **kwargs):

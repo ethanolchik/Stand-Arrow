@@ -8,4 +8,4 @@ class Context(commands.Context):
         """Lists all of the relevant information for a particular stand.
            One stand attribute per line of output."""
         stand = await self.bot.pool.fetchrow(f"SELECT * from stand WHERE stand_name = '{stand_name}'")
-        return tuple(stand)
+        return tuple(stand) if stand else None
