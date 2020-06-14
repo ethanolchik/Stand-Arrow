@@ -1,0 +1,2 @@
+class InsufficientQuantityError(Exception):
+    pass
