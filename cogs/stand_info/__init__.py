@@ -13,8 +13,6 @@ class Stands(commands.Cog):
         if stand_information:
             for chunk in [formatted_message[i:i+2000] for i in range(0, len(formatted_message), 2000)]:
                 await ctx.send(chunk)
-        #if stand_information:
-        #   await ctx.send("\n".join(str(stand_attribute) for stand_attribute in stand_information))
         else:
             await ctx.send(f"There is no stand information available for {stand_name}")
 	
