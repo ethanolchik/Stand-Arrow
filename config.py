@@ -1,7 +1,7 @@
 import os
 
 db = {
-	"database": "JoJo",
+	"database": "test",
 	"user": "dev",
 	"password": "dev",
 	"host": "localhost",

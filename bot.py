@@ -15,8 +15,3 @@ class Bot(commands.Bot):
 
     async def connect_all(self):
         self.pool = await asyncpg.create_pool(**self.config.db, min_size=10, max_size=20, command_timeout=60.0)
-
-
-
-
-
