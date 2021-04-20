@@ -2,7 +2,7 @@
 aiohttp==3.6.2
 astunparse==1.6.3
 async-timeout==3.0.1
-asyncpg==0.20.1
+asyncpg==0.21.0
 attrs==19.3.0
 beautifulsoup4==4.9.1
 braceexpand==0.1.5
